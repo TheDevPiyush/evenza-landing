@@ -19,6 +19,8 @@ header {
   text-align: center;
 }
 
+
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -50,6 +52,17 @@ nav {
 .hero h1 {
   font-size: 48px;
   margin-bottom: 20px;
+}
+
+.hero h1 span {
+  /* background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%); */
+  /* background-image: linear-gradient(to top, #37ecba 0%, #72afd3 100%); */
+  background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
+  /* background-image: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%); */
+  /* background-image: linear-gradient(120deg, #f093fb 0%, #f5576c 100%); */
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .hero p {
@@ -95,7 +108,8 @@ nav {
   width: 300px;
   transition: all 300ms ease-in-out;
 }
-.card:hover{
+
+.card:hover {
   scale: 1.03;
   cursor: pointer;
 }
@@ -160,4 +174,7 @@ footer {
     flex-direction: column;
     align-items: center;
   }
+}
+.subtitle{
+  font-size: smaller;
 }

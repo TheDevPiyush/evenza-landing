@@ -3,14 +3,14 @@ import React from 'react'
 export default function page() {
   return (
     <>
-      <header>
+      <header className='entry'>
         <nav>
-          <div className="logo">Evenza</div>
+          <div className="logo flex items-center gap-2"> <span><img className='rounded-full' src="/logo.png" width={30} alt="" /></span> Evenza</div>
           <a href='https://app.evenza.xyz' target='_blank' className="cta-button">Get Started</a>
         </nav>
         <div className="hero">
-          <h1 className='font-bold'>Host Events, Effortlessly</h1>
-          <p className='font-semibold opacity-70'> Evenza makes event planning and hosting simple, modern, and fun.</p>
+          <h1 className='font-bold'> <span className='entry'> Host Events,</span> Effortlessly</h1>
+          <p className='font-semibold text-sm opacity-70 subtitle'> Evenza makes event planning and hosting simple, modern, and fun.</p>
           <a href='https://app.evenza.xyz' target='_blank' className="cta-button font-bold text-2xl">Create Event</a>
         </div>
       </header>
